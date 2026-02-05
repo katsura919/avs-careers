@@ -15,7 +15,7 @@ const CTA = () => {
           size="lg"
           className="bg-blue-600 hover:bg-blue-700 text-lg px-10 py-6 h-auto"
         >
-          <Link href="/requirements/apply-here">Apply Here</Link>
+          <Link href="/apply-here">Apply Here</Link>
         </Button>
       </div>
     </section>
