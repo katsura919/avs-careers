@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const array = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Requirements", href: "/requirements" },
+  { name: "Blog", href: "/blog" },
+  { name: "FAQs", href: "/faqs" },
+  { name: "Apply Here", href: "/apply-here" },
+];
+
 const Header = () => {
   return (
     <header className="bg-[#0A3B5C] text-white py-4 px-8 sticky top-0 z-50">
@@ -19,36 +28,15 @@ const Header = () => {
         </div>
         {/* Navigation links on the right */}
         <nav className="flex gap-8 text-sm items-center">
-          <Link
-            href="/"
-            className="hover:text-gray-300 transition-colors font-medium"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about-us"
-            className="hover:text-gray-300 transition-colors font-medium"
-          >
-            About Us
-          </Link>
-          <Link
-            href="/requirements"
-            className="hover:text-gray-300 transition-colors font-medium"
-          >
-            Requirements
-          </Link>
-          <Link
-            href="/blog"
-            className="hover:text-gray-300 transition-colors font-medium"
-          >
-            Blog
-          </Link>
-          <Link
-            href="/requirements/apply-here"
-            className="hover:text-gray-300 transition-colors font-medium"
-          >
-            Apply Here
-          </Link>
+          {array.map((item) => (
+            <Link
+              key={item.name}
+              href={item.href}
+              className="hover:text-gray-300 transition-colors duration-200"
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>
