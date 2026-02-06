@@ -12,51 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 
-const jobListings = [
-  {
-    id: 1,
-    title: "Cold Callers",
-    category: "Work From Home",
-    description:
-      "We are hiring cold callers who can build sales campaigns and convert leads into successful candidate we will be working with our client in different niche in which he/she will be assigned.",
-  },
-  {
-    id: 2,
-    title: "Full Stack Developer",
-    category: "Work From Home",
-    description:
-      "We are seeking a Full Stack Developer to join our team. The ideal candidate will work on developing and maintaining web-based applications and services.",
-    featured: true,
-  },
-  {
-    id: 3,
-    title: "iOS Developer",
-    category: "Work From Home",
-    description:
-      "We are seeking an experienced iOS Developer to join our mobile app development team. The successful candidate will be responsible for developing and maintaining iOS applications for our clients.",
-  },
-  {
-    id: 4,
-    title: "Dispatch Call Representative",
-    category: "Work From Home",
-    description:
-      "The dispatch call representative will be responsible for answering incoming calls and dispatching calls to the appropriate departments or individuals.",
-  },
-  {
-    id: 5,
-    title: "Client Services Call Representative",
-    category: "Work From Home",
-    description:
-      "The client services call representative will be responsible for answering incoming calls, responding to customer inquiries, and providing excellent customer service.",
-  },
-  {
-    id: 6,
-    title: "Telemarketing Call Representative",
-    category: "Work From Home",
-    description:
-      "The telemarketing call representative will be responsible for making outbound calls to potential customers and promoting products or services.",
-  },
-];
+import { jobListings } from "@/data/apply-here/listing.data";
 
 const ApplyHere = () => {
   const [formData, setFormData] = useState({
@@ -89,9 +45,9 @@ const ApplyHere = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-900 dark:to-black">
+    <div className="min-h-screen bg-linear-to-b from-zinc-50 to-white dark:from-zinc-900 dark:to-black">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-[#0c4a6e] to-[#0e7490] text-white py-16 px-8">
+      <div className="relative bg-linear-to-r from-[#0c4a6e] to-[#0e7490] text-white py-16 px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Apply Now</h1>
         </div>
@@ -363,132 +319,6 @@ const ApplyHere = () => {
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-
-        {/* Newsletter Section */}
-        <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white border-0 mb-8">
-          <CardContent className="py-8">
-            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">
-                  Get Exclusive Access
-                </h3>
-                <p className="text-blue-100">
-                  Be the first to know about new career opportunities. So, what
-                  are you waiting for?
-                </p>
-              </div>
-              <form
-                onSubmit={handleNewsletterSubmit}
-                className="flex-1 w-full md:w-auto"
-              >
-                <div className="flex gap-2">
-                  <Input
-                    type="email"
-                    placeholder="Email Address"
-                    value={newsletterEmail}
-                    onChange={(e) => setNewsletterEmail(e.target.value)}
-                    className="flex-1 bg-white text-gray-900"
-                    required
-                  />
-                  <Button
-                    type="submit"
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-6"
-                  >
-                    Subscribe
-                  </Button>
-                </div>
-              </form>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Footer Section */}
-        <div className="bg-gradient-to-r from-[#0c4a6e] to-[#0e7490] text-white -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12 mt-16">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* About Section */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">A</span>
-                </div>
-                <span className="font-bold text-lg">AVSPH</span>
-              </div>
-              <p className="text-sm text-blue-100">
-                AVSPH is a Filipino Virtual Assistants in realizing their full
-                potential by providing a platform for building their
-                work-from-home dreams and achieving their dreams.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/" className="text-blue-100 hover:text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/about-us"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/requirements"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    Requirements
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/training"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    Training
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Contact</h4>
-              <div className="space-y-2 text-sm text-blue-100">
-                <p>Submit your application now but, make sure to first:</p>
-                <p className="flex items-center gap-2">
-                  📧 hiring@avsvirtualstaff.com
-                </p>
-                <p>⏰ 8 A.M. - 5 P.M., Monday - Saturday</p>
-                <div className="flex gap-4 mt-4">
-                  <a href="#" className="hover:text-white">
-                    📘
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    ▶️
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    💼
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    📷
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    🎵
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-8 pt-8 border-t border-blue-500 text-sm text-blue-100">
-            AVSPH Virtual Assistance Services © 2025. All rights reserved
           </div>
         </div>
       </div>

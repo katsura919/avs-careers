@@ -6,106 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "Project Management Apps and Tools",
-    description:
-      "Project Management Apps and Tools A Freelancer's Guide to Staying...",
-    category: "FREELANCING",
-    image: "📊",
-    color: "from-blue-100 to-blue-200",
-  },
-  {
-    id: 2,
-    title: "9 Essential Skills for Becoming a Successful Virtual Assistant",
-    description:
-      "9 Essential Skills for Becoming a Successful Virtual Assistant Are...",
-    category: "FREELANCING",
-    image: "💼",
-    color: "from-cyan-100 to-teal-200",
-  },
-  {
-    id: 3,
-    title: "Avoiding Unprofessional Clients: How to Spot Red Flags",
-    description:
-      "Avoiding Unprofessional Clients How to Spot Red Flags When You...",
-    category: "FREELANCING",
-    image: "🚩",
-    color: "from-blue-100 to-cyan-200",
-  },
-  {
-    id: 4,
-    title: "Tips for Balancing Work and Family",
-    description: "Working From Home as a Parent: Tips for Balancing Work...",
-    category: "FREELANCING",
-    image: "👨‍👩‍👧",
-    color: "from-pink-100 to-orange-200",
-  },
-  {
-    id: 5,
-    title: "7 Reasons Why Freelancers Should Make Healthy Eating a Priority",
-    description:
-      "7 Reasons Why Freelancers Should Make Healthy Eating a Priority...",
-    category: "FREELANCING",
-    image: "🥗",
-    color: "from-yellow-100 to-orange-200",
-  },
-  {
-    id: 6,
-    title: "How to Manage Your Time as a Freelancer",
-    description: "Balancing Life and Work: How to Manage Your Time as...",
-    category: "FREELANCING",
-    image: "⏰",
-    color: "from-cyan-100 to-blue-200",
-  },
-  {
-    id: 7,
-    title: "Setting Rates and Negotiating Deals: Strategies for Freelancers",
-    description:
-      "Setting Rates and Negotiating Deals Strategies for Freelancers Setting rates...",
-    category: "FREELANCING",
-    image: "💰",
-    color: "from-gray-100 to-purple-200",
-  },
-  {
-    id: 8,
-    title: "Networking Strategies for Freelancers",
-    description:
-      "Making Connections Networking Strategies for Freelancers As a freelancer, making...",
-    category: "FREELANCING",
-    image: "🤝",
-    color: "from-blue-100 to-purple-200",
-  },
-  {
-    id: 9,
-    title: "The Benefits of Freelancing",
-    description:
-      "The Benefits of Freelancing What You Can Gain From Working...",
-    category: "FREELANCING",
-    image: "✨",
-    color: "from-cyan-100 to-blue-200",
-  },
-  {
-    id: 10,
-    title: "How Freelancing Can Help You Reach Your Dreams",
-    description:
-      "Unlock Your Potential How Freelancing Can Help You Reach Your...",
-    category: "FREELANCING",
-    image: "🎯",
-    color: "from-gray-100 to-blue-200",
-  },
-  {
-    id: 11,
-    title:
-      "Becoming a Freelancer: Taking the First Steps Toward Financial Freedom",
-    description:
-      "Becoming a Freelancer: Taking the First Steps Toward Financial Freedom",
-    category: "FREELANCING",
-    image: "💻",
-    color: "from-teal-100 to-cyan-200",
-  },
-];
+import { blogPosts } from "@/data/blog/blog.data";
 
 const Blog = () => {
   const [newsletterEmail, setNewsletterEmail] = useState("");
@@ -116,9 +17,9 @@ const Blog = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-900 dark:to-black">
+    <div className="min-h-screen bg-linear-to-b from-zinc-50 to-white dark:from-zinc-900 dark:to-black">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-[#0c4a6e] to-[#0e7490] text-white py-16 px-8">
+      <div className="relative bg-linear-to-b from-[#0c4a6e] to-[#0e7490] text-white py-16 px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Blog</h1>
         </div>
@@ -137,7 +38,7 @@ const Blog = () => {
                 <div className="flex flex-col sm:flex-row">
                   {/* Image Section */}
                   <div
-                    className={`w-full sm:w-2/5 bg-gradient-to-br ${post.color} flex items-center justify-center p-8 relative`}
+                    className={`w-full sm:w-2/5 bg-linear-to-br ${post.color} flex items-center justify-center p-8 relative`}
                   >
                     <div className="text-6xl">{post.image}</div>
                     <div className="absolute top-4 left-4">
@@ -176,137 +77,6 @@ const Blog = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Newsletter Section */}
-        <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white border-0 mb-8">
-          <CardContent className="py-8">
-            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">
-                  Get Exclusive Access
-                </h3>
-                <p className="text-blue-100">
-                  Be the first to know about hiring and training opportunities.
-                  So, what are you waiting for?
-                </p>
-              </div>
-              <form
-                onSubmit={handleNewsletterSubmit}
-                className="flex-1 w-full md:w-auto"
-              >
-                <div className="flex gap-2">
-                  <Input
-                    type="email"
-                    placeholder="Email Address"
-                    value={newsletterEmail}
-                    onChange={(e) => setNewsletterEmail(e.target.value)}
-                    className="flex-1 bg-white text-gray-900"
-                    required
-                  />
-                  <Button
-                    type="submit"
-                    className="bg-orange-500 hover:bg-orange-600 text-white px-6"
-                  >
-                    Subscribe
-                  </Button>
-                </div>
-              </form>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Footer Section */}
-        <div className="bg-gradient-to-r from-[#0c4a6e] to-[#0e7490] text-white -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-12 mt-16">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* About Section */}
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <span className="text-blue-600 font-bold text-xl">A</span>
-                </div>
-                <span className="font-bold text-lg">AVSPH</span>
-              </div>
-              <p className="text-sm text-blue-100">
-                AVSPH is a Filipino Virtual Assistants in realizing their full
-                potential by providing a platform for building their
-                work-from-home dreams and achieving their dreams.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="/" className="text-blue-100 hover:text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/about-us"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/requirements"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    Requirements
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/training"
-                    className="text-blue-100 hover:text-white"
-                  >
-                    Training
-                  </a>
-                </li>
-                <li>
-                  <a href="/blog" className="text-blue-100 hover:text-white">
-                    Apply Here
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-bold text-lg mb-4">Contact</h4>
-              <div className="space-y-2 text-sm text-blue-100">
-                <p>Submit your application now but, make sure to first:</p>
-                <p className="flex items-center gap-2">
-                  📧 hiring@avsvirtualstaff.com
-                </p>
-                <p>⏰ 8 A.M. - 5 P.M., Monday - Saturday</p>
-                <div className="flex gap-4 mt-4">
-                  <a href="#" className="hover:text-white">
-                    📘
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    ▶️
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    💼
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    📷
-                  </a>
-                  <a href="#" className="hover:text-white">
-                    🎵
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-center mt-8 pt-8 border-t border-blue-500 text-sm text-blue-100">
-            AVSPH Virtual Assistance Services © 2025. All rights reserved
-          </div>
         </div>
       </div>
     </div>
