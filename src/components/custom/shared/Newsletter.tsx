@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 
 const Newsletter = () => {
   return (
-    <section className="bg-[#0A3B5C] text-white py-12 px-8">
+    <section className="bg-[#08324a] text-white py-12 px-8 rounded-t-2xl">
       <div className="max-w-7xl mx-auto">
-        <Card className="bg-transparent border-white/20 shadow-xl">
+        <Card className="bg-[#0452b0] border-none">
           <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-8 items-center ">
               <div>
                 <h3 className="text-2xl font-bold mb-2 text-white">
                   Get Exclusive Access
