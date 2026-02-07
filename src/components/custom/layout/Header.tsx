@@ -12,7 +12,7 @@ const array = [
 
 const Header = () => {
   return (
-    <header className="bg-[#0A3B5C] text-white py-4 px-8 sticky top-0 z-50">
+    <header className="bg-[#053f5c] text-white py-4 px-8 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo on the left */}
         <div className="shrink-0">
