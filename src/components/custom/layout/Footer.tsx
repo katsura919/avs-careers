@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <Fragment>
       <Newsletter />
-      <footer className="bg-[#08324A] text-white py-12 px-8">
+      <footer className="bg-[#08324a] text-white py-12 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>

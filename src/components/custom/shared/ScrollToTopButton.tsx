@@ -27,11 +27,11 @@ export default function ScrollToTopButton() {
       size="icon-lg"
       variant="secondary"
       className={cn(
-        "fixed bottom-8 right-8 z-50 rounded-full shadow-xl border border-border bg-background/90 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300",
+        "fixed bottom-8 right-8 z-50 rounded-full shadow-xl border border-border bg-[#08324a] text-white hover:bg-primary hover:text-primary-foreground transition-all duration-300",
         visible ? "opacity-100" : "opacity-0 pointer-events-none",
       )}
     >
-      <ArrowUp className="mx-auto" size={28} strokeWidth={2.5} />
+      <ArrowUp className="mx-auto text-white" size={28} strokeWidth={2.5} />
     </Button>
   );
 }

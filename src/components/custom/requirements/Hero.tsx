@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="bg-linear-to-br from-[#0A3B5C] to-[#0d4a6f] text-white pt-10 pb-20 px-8 text-center">
+    <section className="bg-[#053f5c] text-white pt-10 pb-20 px-8 text-center">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col items-center mb-6">
           <h1 className="text-5xl font-bold mb-4">
