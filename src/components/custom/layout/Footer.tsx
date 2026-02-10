@@ -1,12 +1,27 @@
 import { Fragment } from "react";
 import Image from "next/image";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTikTok,
+} from "react-icons/ai";
 import Newsletter from "../shared/Newsletter";
+
+const QuickLinks = [
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Apply Here", href: "/apply-here" },
+  { name: "Requirements", href: "/requirements" },
+  { name: "FAQs", href: "/faqs" },
+  { name: "Training", href: "/training" },
+];
 
 const Footer = () => {
   return (
     <Fragment>
       <Newsletter />
-      <footer className="bg-[#08324a] text-white py-12 px-8">
+      <footer className="bg-[#08324a] text-white py-5 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
@@ -26,36 +41,16 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Apply Here
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Requirements
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 hover:text-white">
-                    Training
-                  </a>
-                </li>
+                {QuickLinks.map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.href}
+                      className="text-gray-300 hover:text-white"
+                    >
+                      {link.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -69,19 +64,16 @@ const Footer = () => {
                 <li>⏰ 8 AM - 5 PM, Monday - Friday (Philippine Time)</li>
                 <li className="flex gap-3 mt-4">
                   <a href="#" className="hover:text-[#FF6B35]">
-                    📘
+                    <AiFillFacebook size={20} />
                   </a>
                   <a href="#" className="hover:text-[#FF6B35]">
-                    💼
+                    <AiFillLinkedin size={20} />
                   </a>
                   <a href="#" className="hover:text-[#FF6B35]">
-                    ▶️
+                    <AiFillInstagram size={20} />
                   </a>
                   <a href="#" className="hover:text-[#FF6B35]">
-                    📷
-                  </a>
-                  <a href="#" className="hover:text-[#FF6B35]">
-                    🎵
+                    <AiFillTikTok size={20} />
                   </a>
                 </li>
               </ul>

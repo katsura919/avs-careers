@@ -7,7 +7,7 @@ const Newsletter = () => {
   return (
     <section className="bg-[#08324a] text-white py-12 px-8 rounded-t-2xl">
       <div className="max-w-7xl mx-auto">
-        <Card className="bg-[#0452b0] border-none">
+        <Card className="bg-[#334155] border-none">
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center ">
               <div>
