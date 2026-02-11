@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AVS Careers",
-  description: "Join our team at AVS",
+  title: "Advance Virtual Staff PH | Build Your Remote Career",
+  description:
+    "Join Advance Virtual Staff PH — the leading Filipino virtual assistant agency. Discover remote career opportunities, competitive pay, and a supportive community.",
 };
 
 export default function RootLayout({
@@ -28,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
-        <div className="bg-accent min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

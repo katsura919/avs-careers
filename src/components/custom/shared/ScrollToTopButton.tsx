@@ -24,14 +24,15 @@ export default function ScrollToTopButton() {
     <Button
       onClick={scrollToTop}
       aria-label="Scroll to top"
-      size="icon-lg"
-      variant="secondary"
+      size="icon"
       className={cn(
-        "fixed bottom-8 right-8 z-50 rounded-full shadow-xl border border-border bg-[#08324a] text-white hover:bg-primary hover:text-primary-foreground transition-all duration-300",
-        visible ? "opacity-100" : "opacity-0 pointer-events-none",
+        "fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full shadow-lg bg-[#024466] text-white hover:bg-[#FF6B35] transition-all duration-300",
+        visible
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-4 pointer-events-none",
       )}
     >
-      <ArrowUp className="mx-auto text-white" size={28} strokeWidth={2.5} />
+      <ArrowUp size={22} strokeWidth={2.5} />
     </Button>
   );
 }
