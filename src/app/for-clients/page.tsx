@@ -144,7 +144,7 @@ export default function ForClientsPage() {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Hire World-Class{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-yellow-400">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-[#FF6B35] to-yellow-400">
                   Virtual Assistants
                 </span>
               </h1>

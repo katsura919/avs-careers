@@ -6,7 +6,7 @@ import { Send } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="bg-gradient-to-r from-[#024466] to-[#0a6e8a] py-16 px-6">
+    <section className="bg-linear-to-r from-[#024466] to-[#0a6e8a] py-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h3 className="text-3xl font-bold text-white mb-3">
           Ready to Start Your VA Career?

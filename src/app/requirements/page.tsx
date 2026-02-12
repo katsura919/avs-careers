@@ -132,7 +132,7 @@ export default function RequirementsPage() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Requirements to Become a{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-yellow-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#FF6B35] to-yellow-400">
                 Virtual Assistant
               </span>
             </h1>

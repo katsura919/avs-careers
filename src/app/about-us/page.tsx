@@ -98,7 +98,7 @@ export default function AboutUs() {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               About{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-yellow-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#FF6B35] to-yellow-400">
                 Advance Virtual Staff PH
               </span>
             </h1>
@@ -208,7 +208,7 @@ export default function AboutUs() {
             <AnimatedSection delay={0.1}>
               <Card className="border-0 shadow-lg h-full overflow-hidden group hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className="bg-gradient-to-r from-[#FF6B35] to-[#ff8c5a] p-8 text-white">
+                  <div className="bg-linear-to-r from-[#FF6B35] to-[#ff8c5a] p-8 text-white">
                     <Eye size={36} className="mb-4" />
                     <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                     <p className="text-white/90 leading-relaxed">
@@ -225,7 +225,7 @@ export default function AboutUs() {
             <AnimatedSection delay={0.2}>
               <Card className="border-0 shadow-lg h-full overflow-hidden group hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-0">
-                  <div className="bg-gradient-to-r from-[#024466] to-[#035a82] p-8 text-white">
+                  <div className="bg-linear-to-r from-[#024466] to-[#035a82] p-8 text-white">
                     <Target size={36} className="mb-4" />
                     <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                     <p className="text-blue-100 leading-relaxed">

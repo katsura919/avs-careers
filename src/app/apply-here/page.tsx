@@ -68,7 +68,7 @@ const ApplyHere = () => {
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Apply{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-yellow-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-[#FF6B35] to-yellow-400">
                 Now
               </span>
             </h1>
@@ -149,7 +149,7 @@ const ApplyHere = () => {
             <div className="lg:col-span-1">
               <AnimatedSection delay={0.3}>
                 <Card className="sticky top-24 border-0 shadow-xl overflow-hidden">
-                  <CardHeader className="bg-gradient-to-r from-[#024466] to-[#035a82] text-white p-6">
+                  <CardHeader className="bg-linear-to-r from-[#024466] to-[#035a82] text-white p-6">
                     <CardTitle className="text-lg text-center">
                       Join Our Waitlist
                     </CardTitle>
