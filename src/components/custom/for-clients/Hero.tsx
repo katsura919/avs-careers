@@ -60,7 +60,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 h-13 px-8 text-base font-semibold rounded-xl"
+                  className="border-white/30 bg-cyan-500 text-white hover:bg-white/50 h-13 px-8 text-base font-semibold rounded-xl"
                 >
                   View Services
                 </Button>
