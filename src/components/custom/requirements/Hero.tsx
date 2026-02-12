@@ -16,7 +16,7 @@ const Hero = () => {
         <motion.div
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 10, repeat: Infinity }}
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl"
+          className="absolute bottom-0 left-0 w-125 h-125 bg-white/10 rounded-full blur-3xl"
         />
       </div>
 
