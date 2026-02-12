@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Careers", href: "/careers" },
   { name: "Requirements", href: "/requirements" },
   { name: "About Us", href: "/about-us" },
+  { name: "FAQs", href: "/faqs" },
   { name: "Blog", href: "/blog" },
   { name: "For Clients", href: "/for-clients" },
 ];
