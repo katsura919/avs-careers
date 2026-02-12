@@ -97,4 +97,112 @@ export const blogPosts = [
     image: "💻",
     color: "from-teal-100 to-cyan-200",
   },
+  {
+    id: 12,
+    title: "What is a Virtual Assistant? Complete Career Guide",
+    description:
+      "What is a Virtual Assistant? Complete Career Guide Learn about the role of virtual assistants...",
+    category: "VA_CAREERS",
+    image: "🖥️",
+    color: "from-indigo-100 to-blue-200",
+  },
+  {
+    id: 13,
+    title: "VA Specialization: Finding Your Niche in the Industry",
+    description:
+      "VA Specialization Finding Your Niche in the Industry Discover various specializations available...",
+    category: "VA_CAREERS",
+    image: "🎯",
+    color: "from-purple-100 to-pink-200",
+  },
+  {
+    id: 14,
+    title: "From Day One: Starting Your VA Career Successfully",
+    description:
+      "From Day One Starting Your VA Career Successfully Tips and strategies for new VA professionals...",
+    category: "VA_CAREERS",
+    image: "🚀",
+    color: "from-orange-100 to-red-200",
+  },
+  {
+    id: 15,
+    title: "Advancing Your VA Career: Growth and Development Paths",
+    description:
+      "Advancing Your VA Career Growth and Development Paths Learn how to progress in your VA career...",
+    category: "VA_CAREERS",
+    image: "📈",
+    color: "from-green-100 to-emerald-200",
+  },
+  {
+    id: 16,
+    title: "Creating the Perfect Home Office Setup for Remote Work",
+    description:
+      "Creating the Perfect Home Office Setup for Remote Work Design a productive workspace...",
+    category: "REMOTE_WORK_TIPS",
+    image: "🏠",
+    color: "from-amber-100 to-orange-200",
+  },
+  {
+    id: 17,
+    title: "Communication Tools Every Remote Worker Should Know",
+    description:
+      "Communication Tools Every Remote Worker Should Know Master remote communication platforms...",
+    category: "REMOTE_WORK_TIPS",
+    image: "💬",
+    color: "from-blue-100 to-cyan-200",
+  },
+  {
+    id: 18,
+    title: "Staying Productive: Remote Work Productivity Hacks",
+    description:
+      "Staying Productive Remote Work Productivity Hacks Maximize your efficiency while working from home...",
+    category: "REMOTE_WORK_TIPS",
+    image: "⚡",
+    color: "from-yellow-100 to-yellow-200",
+  },
+  {
+    id: 19,
+    title: "Cybersecurity for Remote Workers: Protecting Your Data",
+    description:
+      "Cybersecurity for Remote Workers Protecting Your Data Essential security practices for remote professionals...",
+    category: "REMOTE_WORK_TIPS",
+    image: "🔒",
+    color: "from-red-100 to-pink-200",
+  },
+  {
+    id: 20,
+    title: "From Zero to Hero: Sarah's Journey as a Virtual Assistant",
+    description:
+      "From Zero to Hero Sarah's Journey as a Virtual Assistant Inspiring success story of a VA who transformed...",
+    category: "SUCCESS_STORIES",
+    image: "⭐",
+    color: "from-yellow-100 to-orange-200",
+  },
+  {
+    id: 21,
+    title: "Growing a Six-Figure VA Business: Maria's Success Story",
+    description:
+      "Growing a Six-Figure VA Business Maria's Success Story Discover how Maria scaled her VA business...",
+    category: "SUCCESS_STORIES",
+    image: "💎",
+    color: "from-purple-100 to-pink-200",
+  },
+  {
+    id: 22,
+    title: "Building Client Relationships: John's Path to Long-Term Success",
+    description:
+      "Building Client Relationships John's Path to Long-Term Success Learn from John's experience building...",
+    category: "SUCCESS_STORIES",
+    image: "🤲",
+    color: "from-rose-100 to-pink-200",
+  },
+  {
+    id: 23,
+    title: "Work-Life Balance Mastery: Alex's Guide to Sustainable Success",
+    description:
+      "Work-Life Balance Mastery Alex's Guide to Sustainable Success How Alex achieved the perfect balance...",
+    category: "SUCCESS_STORIES",
+    image: "⚖️",
+    color: "from-teal-100 to-cyan-200",
+  },
 ];
