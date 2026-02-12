@@ -8,13 +8,14 @@ import CTA from "@/components/custom/blog/CTA";
 import { blogPosts } from "@/data/blog/blog.data";
 
 const Blog = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("ALL");
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesCategory =
-      activeCategory === "All" ||
+      activeCategory === "ALL" ||
       post.category.toLowerCase().includes(activeCategory.toLowerCase());
+    console.log(activeCategory);
     const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.description.toLowerCase().includes(searchQuery.toLowerCase());
