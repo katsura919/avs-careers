@@ -33,8 +33,8 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-            Everything you need to know about working with Advance Virtual
-            Staff PH. Can&apos;t find your answer? Reach out to us!
+            Everything you need to know about working with Advance Virtual Staff
+            PH. Can&apos;t find your answer? Reach out to us!
           </p>
         </motion.div>
       </div>
