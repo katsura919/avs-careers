@@ -1,16 +1,14 @@
-import React from "react";
+"use client";
+import Hero from "@/components/custom/faqs/Hero";
+import FAQList from "@/components/custom/faqs/FAQList";
+import CTA from "@/components/custom/faqs/CTA";
 
-const FAQs = () => {
+export default function FAQs() {
   return (
-    <div>
-      <section className="py-20 px-8 text-center">
-        <h1 className="text-4xl font-bold mb-4">Frequently Asked Questions</h1>
-        <p className="text-xl text-gray-600 mb-8">
-          Here are some common questions about AVS Careers
-        </p>
-      </section>
+    <div className="overflow-hidden">
+      <Hero />
+      <FAQList />
+      <CTA />
     </div>
   );
-};
-
-export default FAQs;
+}

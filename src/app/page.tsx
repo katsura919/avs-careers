@@ -1,13 +1,23 @@
+"use client";
+// components
+import Hero from "@/components/custom/landing/Hero";
+import Stats from "@/components/custom/landing/Stats";
+import ChooseUs from "@/components/custom/landing/ChooseUs";
+import HowItWorks from "@/components/custom/landing/HowItWorks";
+import Testimonials from "@/components/custom/landing/Testimonials";
+import CompanyCulture from "@/components/custom/landing/CompanyCulture";
+import CTA from "@/components/custom/landing/CTA";
+
 export default function Home() {
   return (
-    <div>
-      {/* Home page content */}
-      <section className="py-20 px-8 text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to AVS Careers</h1>
-        <p className="text-xl text-gray-600">
-          Find your next opportunity with us
-        </p>
-      </section>
+    <div className="overflow-hidden">
+      <Hero />
+      <Stats />
+      <ChooseUs />
+      <HowItWorks />
+      <Testimonials />
+      <CompanyCulture />
+      <CTA />
     </div>
   );
 }
